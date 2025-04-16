@@ -23,12 +23,18 @@ jobs:
         with:
           python-version: '3.12'
 
-      # Шаг 3: Установка зависимостей
+      # Шаг 3: Установка Poetry
+      - name: Install Poetry
+        run: |
+          curl -sSL https://install.python-poetry.org | python3 -
+          echo "$HOME/.local/bin" >> $GITHUB_PATH
+
+      # Шаг 4: Установка зависимостей
       - name: Install dependencies
         run: |
-          poetry install --no-root
+          poetry install
 
-      # Шаг 4: Запуск проверки типов с mypy
+      # Шаг 5: Запуск проверки типов с mypy
       - name: Run mypy
         run: |
           poetry run mypy .
