@@ -28,16 +28,17 @@
 
 ```
 project/
-├── basic/               # Базовые задачи
-│   ├── task_01.py       # Пример: Решение задачи 1
-│   ├── task_02.py
-├── intermediate/        # Продвинутые задачи
-│   ├── task_01.py
-│   ├── task_02.py
-├── advanced/            # Сложные задачи
-│   ├── task_01.py
-├── extreme/             # ☠️☠️☠️
-|   ├── task_01.py       
+├── src
+|   ├── basic/               # Базовые задачи
+|   │   ├── task_01.py       # Пример: Решение задачи 1
+|   │   └── task_02.py
+|   ├── intermediate/        # Продвинутые задачи
+|   │   ├── task_01.py
+|   │   └── task_02.py
+|   ├── advanced/            # Сложные задачи
+|   │   └── task_01.py
+|   └── extreme/             # ☠️☠️☠️
+|       └── task_01.py       
 ├── Makefile             # Локальная проверка типов с помощью `make typing`
 ├── .github/workflows/   # Конфигурация GitHub Actions для CI
 │   └── ci.yml
