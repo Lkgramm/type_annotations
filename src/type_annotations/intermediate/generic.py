@@ -11,8 +11,8 @@ from typing import TypeVar, List, assert_type
 T = TypeVar("T")
 
 
-def add(a: T, b: T) -> T:
-    ...
+def add(a: T, b: T) -> T: # type: ignore[empty-body]
+    ... 
 
 
 if __name__ == "__main__":

@@ -12,7 +12,7 @@ from typing import TypeVar, assert_type
 T = TypeVar("T", bound=int)
 
 
-def add(a: T) -> T:
+def add(a: T) -> T: # type: ignore[empty-body]
     ...
 
 

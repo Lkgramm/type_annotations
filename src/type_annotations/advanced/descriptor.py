@@ -19,7 +19,7 @@ class Descriptor:
     def __get__(self, instance: O, owner: Type[O]) -> str:
         ...
 
-    def __get__(self, instance: O | None, owner: Type[O]) -> 'Descriptor | str':
+    def __get__(self, instance: O | None, owner: Type[O]) -> 'Descriptor | str': # type: ignore[empty-body]
         """you don't need to implement this"""
         ...
 

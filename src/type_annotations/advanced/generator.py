@@ -9,8 +9,7 @@ It does not return anything.
 from typing import Generator, assert_type
 
 
-def gen() -> Generator[int, str, None]:
-    """You don't need to implement it"""
+def gen() -> Generator[int, str, None]: # type: ignore[empty-body]
     ...
 
 

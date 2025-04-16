@@ -9,7 +9,7 @@ The decorator takes an argument `message` of type string
 from typing import Callable
 
 
-def decorator(message: str) -> Callable:
+def decorator(message: str) -> Callable: # type: ignore[empty-body]
     ...
 
 

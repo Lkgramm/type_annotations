@@ -19,7 +19,7 @@ if __name__ == "__main__":
     class MyBuffer:
         def __init__(self, data: bytes):
             self.data = bytearray(data)
-            self.view = None
+            self.view : memoryview | None = None
 
         def __buffer__(self, flags: int) -> memoryview:
             self.view = memoryview(self.data)

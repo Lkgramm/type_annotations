@@ -30,6 +30,6 @@ if __name__ == "__main__":
         "address": "earth",
         "email": "capy@bara.com",
     }
-    a: Person = {"name": "Capy"}
+    a: Person = {"name": "Capy"} # type: ignore[no-redef]
     # fmt: off
-    a: Person = {"age": 1, "gender": "Male", "address": "", "email": ""}  # type: ignore[arg-type]
+    a: Person = {"age": 1, "gender": "Male", "address": "", "email": ""}  # type: ignore[arg-type, no-redef]
